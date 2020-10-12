@@ -1,4 +1,4 @@
-import mongoose, { mongo } from 'mongoose';
+import mongoose from 'mongoose';
 
 const homeworkSchema = mongoose.Schema(
   {
@@ -11,7 +11,7 @@ const homeworkSchema = mongoose.Schema(
       required: true,
     },
     due_date: {
-      type: String,
+      type: Date,
       required: true,
     },
     status: {
@@ -20,7 +20,7 @@ const homeworkSchema = mongoose.Schema(
     },
   },
   {
-    timestamp: true,
+    timestamps: true,
   }
 );
 
