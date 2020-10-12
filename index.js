@@ -2,6 +2,9 @@ import express from 'express';
 import mongoose from 'mongoose';
 import morgan from 'morgan';
 
+// Database models
+import Homework from './database';
+
 const app = express();
 
 // Connect to DB
