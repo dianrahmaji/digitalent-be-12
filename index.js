@@ -4,6 +4,7 @@ import morgan from 'morgan';
 
 const app = express();
 
+// Connect to DB
 mongoose.connect('mongodb+srv://admin:<password>@restapi.e0ypz.mongodb.net/<dbname>?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
